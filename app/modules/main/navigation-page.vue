@@ -78,7 +78,13 @@
 </template>
 
 <script setup lang="ts">
-import { Map, BarChart3, Settings, Bell, ChevronRight } from "lucide-vue-next";
+import {
+  Map,
+  BarChart3,
+  Settings,
+  Navigation,
+  ChevronRight,
+} from "lucide-vue-next";
 import type { ModuleCard } from "~/types/modules";
 import { availableModules } from "~/types/modules";
 
@@ -91,7 +97,7 @@ const iconMap: Record<string, any> = {
   Map,
   BarChart3,
   Settings,
-  Bell,
+  Navigation,
   ChevronRight,
 };
 

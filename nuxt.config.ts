@@ -8,6 +8,14 @@ export default defineNuxtConfig({
     componentDir: "./app/components/ui",
   },
 
+  // Runtime config for API endpoints
+  runtimeConfig: {
+    public: {
+      nominatimApiUrl: "https://nominatim.openstreetmap.org",
+      osrmApiUrl: "https://router.project-osrm.org",
+    },
+  },
+
   // Scalability: Auto-import from module subfolders
   imports: {
     dirs: ["modules/*/composables", "modules/*/utils"],

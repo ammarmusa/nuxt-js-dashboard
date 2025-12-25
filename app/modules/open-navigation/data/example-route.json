@@ -1,0 +1,1832 @@
+{
+  "code": "Ok",
+  "routes": [
+    {
+      "legs": [
+        {
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "entry": [true],
+                  "bearings": [44],
+                  "location": [103.651756, 1.540079]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.651756, 1.540079],
+                  [103.651922, 1.540255]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 44,
+                "bearing_before": 0,
+                "location": [103.651756, 1.540079],
+                "type": "depart"
+              },
+              "name": "",
+              "mode": "driving",
+              "weight": 14.8,
+              "duration": 8.4,
+              "distance": 26.8
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 1,
+                  "entry": [true, false, true],
+                  "bearings": [135, 225, 315],
+                  "location": [103.651922, 1.540255]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.651922, 1.540255],
+                  [103.652104, 1.540085]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 132,
+                "bearing_before": 42,
+                "location": [103.651922, 1.540255],
+                "modifier": "right",
+                "type": "turn"
+              },
+              "name": "Jalan Emas 15",
+              "mode": "driving",
+              "weight": 9.1,
+              "duration": 9.1,
+              "distance": 27.6
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 225, 315],
+                  "location": [103.652104, 1.540085]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 225],
+                  "location": [103.652402, 1.54038]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.652104, 1.540085],
+                  [103.652292, 1.540275],
+                  [103.652402, 1.54038],
+                  [103.65246, 1.540443],
+                  [103.65251, 1.540493]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 43,
+                "bearing_before": 132,
+                "location": [103.652104, 1.540085],
+                "modifier": "left",
+                "type": "turn"
+              },
+              "name": "Jalan Emas 26",
+              "mode": "driving",
+              "weight": 11.3,
+              "duration": 11.3,
+              "distance": 63.9
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 1,
+                  "entry": [true, false, true],
+                  "bearings": [135, 225, 315],
+                  "location": [103.65251, 1.540493]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.65251, 1.540493],
+                  [103.652582, 1.540423]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 133,
+                "bearing_before": 43,
+                "location": [103.65251, 1.540493],
+                "modifier": "right",
+                "type": "end of road"
+              },
+              "name": "Jalan Emas 13",
+              "mode": "driving",
+              "weight": 6.7,
+              "duration": 6.7,
+              "distance": 11.1
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.652582, 1.540423]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 225],
+                  "location": [103.652688, 1.540527]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 225],
+                  "location": [103.653077, 1.540932]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 225],
+                  "location": [103.653438, 1.541313]
+                },
+                {
+                  "out": 0,
+                  "in": 1,
+                  "entry": [true, false, true],
+                  "bearings": [45, 225, 315],
+                  "location": [103.654068, 1.541963]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [30, 150, 225],
+                  "location": [103.655103, 1.543036]
+                },
+                {
+                  "out": 0,
+                  "in": 1,
+                  "entry": [true, false, true],
+                  "bearings": [60, 210, 315],
+                  "location": [103.655176, 1.543135]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [60, 150, 240],
+                  "location": [103.655517, 1.54336]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.652582, 1.540423],
+                  [103.652688, 1.540527],
+                  [103.652873, 1.54073],
+                  [103.653077, 1.540932],
+                  [103.653194, 1.541063],
+                  [103.653285, 1.541152],
+                  [103.653438, 1.541313],
+                  [103.653636, 1.541516],
+                  [103.654019, 1.541906],
+                  [103.654068, 1.541963],
+                  [103.655103, 1.543036],
+                  [103.655176, 1.543135],
+                  [103.655301, 1.543216],
+                  [103.655517, 1.54336],
+                  [103.65563, 1.543436]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 45,
+                "bearing_before": 133,
+                "location": [103.652582, 1.540423],
+                "modifier": "left",
+                "type": "turn"
+              },
+              "name": "Jalan Timah",
+              "mode": "driving",
+              "weight": 70.5,
+              "duration": 70.5,
+              "distance": 476.9
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 1,
+                  "entry": [true, false, true],
+                  "bearings": [150, 240, 330],
+                  "location": [103.65563, 1.543436]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.656796, 1.542016]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.657071, 1.541768]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.657334, 1.541535]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.65563, 1.543436],
+                  [103.655859, 1.543124],
+                  [103.656289, 1.542471],
+                  [103.656373, 1.542367],
+                  [103.656529, 1.542224],
+                  [103.656796, 1.542016],
+                  [103.657071, 1.541768],
+                  [103.657334, 1.541535],
+                  [103.657584, 1.541299]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 143,
+                "bearing_before": 54,
+                "location": [103.65563, 1.543436],
+                "modifier": "right",
+                "type": "end of road"
+              },
+              "name": "Jalan Emas Puteh 5",
+              "mode": "driving",
+              "weight": 29.1,
+              "duration": 29.1,
+              "distance": 323.6
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.657584, 1.541299]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [150, 240, 315],
+                  "location": [103.658251, 1.540649]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 225, 330],
+                  "location": [103.658515, 1.540272]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [false, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.659449, 1.539218]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 225, 315],
+                  "location": [103.660049, 1.538611]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, false, false],
+                  "bearings": [135, 210, 315],
+                  "location": [103.660152, 1.538507]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.660215, 1.538444]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 270, 315],
+                  "location": [103.660331, 1.538326]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 225, 315],
+                  "location": [103.660379, 1.538278]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.657584, 1.541299],
+                  [103.658122, 1.540812],
+                  [103.658251, 1.540649],
+                  [103.658294, 1.540586],
+                  [103.658515, 1.540272],
+                  [103.658961, 1.539738],
+                  [103.659449, 1.539218],
+                  [103.660049, 1.538611],
+                  [103.660152, 1.538507],
+                  [103.660215, 1.538444],
+                  [103.660331, 1.538326],
+                  [103.660379, 1.538278],
+                  [103.6607, 1.537953]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 130,
+                "bearing_before": 132,
+                "location": [103.657584, 1.541299],
+                "modifier": "straight",
+                "type": "new name"
+              },
+              "name": "Jalan Tilan",
+              "mode": "driving",
+              "weight": 45.8,
+              "duration": 45.8,
+              "distance": 508.1
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.6607, 1.537953]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.6607, 1.537953],
+                  [103.662163, 1.536455]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 135,
+                "bearing_before": 135,
+                "location": [103.6607, 1.537953],
+                "modifier": "straight",
+                "type": "new name"
+              },
+              "name": "Jalan Jelawat",
+              "mode": "driving",
+              "weight": 23,
+              "duration": 23,
+              "distance": 232.3
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 225, 315],
+                  "location": [103.662163, 1.536455]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.661769, 1.536068]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 225, 315],
+                  "location": [103.66165, 1.535952]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.662163, 1.536455],
+                  [103.661936, 1.536231],
+                  [103.661769, 1.536068],
+                  [103.66165, 1.535952],
+                  [103.661164, 1.535461]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 225,
+                "bearing_before": 135,
+                "location": [103.662163, 1.536455],
+                "modifier": "right",
+                "type": "turn"
+              },
+              "name": "Jalan Limbat",
+              "mode": "driving",
+              "weight": 20.6,
+              "duration": 20.6,
+              "distance": 156.3
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [45, 120, 225, 285],
+                  "location": [103.661164, 1.535461]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [45, 135, 195, 300],
+                  "location": [103.661898, 1.535004]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.662492, 1.534499]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 120, 315],
+                  "location": [103.663066, 1.533994]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.661164, 1.535461],
+                  [103.661898, 1.535004],
+                  [103.661936, 1.534975],
+                  [103.662492, 1.534499],
+                  [103.663032, 1.534017],
+                  [103.663066, 1.533994],
+                  [103.663158, 1.533932],
+                  [103.663307, 1.533862],
+                  [103.663972, 1.533603]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 120,
+                "bearing_before": 223,
+                "location": [103.661164, 1.535461],
+                "modifier": "left",
+                "type": "turn"
+              },
+              "name": "Jalan Baung",
+              "mode": "driving",
+              "weight": 37.5,
+              "duration": 37.5,
+              "distance": 377.4
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 210, 285],
+                  "location": [103.663972, 1.533603]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [30, 105, 210, 285],
+                  "location": [103.663804, 1.533365]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [45, 105, 225, 285],
+                  "location": [103.663451, 1.532902]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.662998, 1.532439]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.661816, 1.531202]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.661429, 1.530798]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.660997, 1.530346]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.660653, 1.529974]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.660383, 1.529683]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.660082, 1.529358]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.659964, 1.529231]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, true],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.659761, 1.529011]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [30, 165, 315],
+                  "location": [103.659431, 1.528573]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.663972, 1.533603],
+                  [103.663804, 1.533365],
+                  [103.663652, 1.53315],
+                  [103.663451, 1.532902],
+                  [103.662998, 1.532439],
+                  [103.662364, 1.53179],
+                  [103.661816, 1.531202],
+                  [103.661631, 1.531007],
+                  [103.661429, 1.530798],
+                  [103.661224, 1.530578],
+                  [103.660997, 1.530346],
+                  [103.66083, 1.530166],
+                  [103.660653, 1.529974],
+                  [103.660383, 1.529683],
+                  [103.660082, 1.529358],
+                  [103.659964, 1.529231],
+                  [103.659761, 1.529011],
+                  [103.659566, 1.528801],
+                  [103.659521, 1.528752],
+                  [103.659449, 1.528625],
+                  [103.659431, 1.528573],
+                  [103.659452, 1.528516]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 215,
+                "bearing_before": 111,
+                "location": [103.663972, 1.533603],
+                "modifier": "right",
+                "type": "end of road"
+              },
+              "name": "Jalan Zapin 10",
+              "mode": "driving",
+              "weight": 69.3,
+              "duration": 69.3,
+              "distance": 759.8
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [165, 270, 345],
+                  "location": [103.659452, 1.528516]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [165, 255, 345],
+                  "location": [103.659632, 1.527992]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [90, 165, 255, 345],
+                  "location": [103.659749, 1.527505]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.659452, 1.528516],
+                  [103.659504, 1.528398],
+                  [103.659509, 1.528383],
+                  [103.659533, 1.528306],
+                  [103.659632, 1.527992],
+                  [103.65969, 1.52775],
+                  [103.659749, 1.527505],
+                  [103.659791, 1.527336]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 160,
+                "bearing_before": 158,
+                "location": [103.659452, 1.528516],
+                "modifier": "left",
+                "type": "turn"
+              },
+              "name": "Jalan Ronggeng 18",
+              "mode": "driving",
+              "weight": 12.3,
+              "duration": 12.3,
+              "distance": 136
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, false, false],
+                  "bearings": [75, 165, 255, 345],
+                  "location": [103.659791, 1.527336]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [false, true, false],
+                  "bearings": [75, 255, 345],
+                  "location": [103.659813, 1.527243]
+                }
+              ],
+              "driving_side": "right",
+              "maneuver": {
+                "bearing_after": 165,
+                "bearing_before": 165,
+                "location": [103.659791, 1.527336],
+                "modifier": "right",
+                "type": "end of road"
+              },
+              "geometry": {
+                "coordinates": [
+                  [103.659791, 1.527336],
+                  [103.659813, 1.527243],
+                  [103.659222, 1.527154],
+                  [103.658503, 1.527021],
+                  [103.658195, 1.526954],
+                  [103.657979, 1.526874],
+                  [103.657794, 1.526805]
+                ],
+                "type": "LineString"
+              },
+              "ref": "J4",
+              "name": "Jalan Gelang Patah-Skudai",
+              "mode": "driving",
+              "weight": 22.8,
+              "duration": 22.8,
+              "distance": 241.1
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true, false],
+                  "bearings": [75, 165, 255, 345],
+                  "location": [103.657794, 1.526805]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [165, 255, 345],
+                  "location": [103.657925, 1.526272]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [75, 165, 345],
+                  "location": [103.657992, 1.526003]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [75, 165, 255, 345],
+                  "location": [103.65838, 1.524431]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 225, 315],
+                  "location": [103.658849, 1.523291]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.660163, 1.522053]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.660766, 1.521487]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, false, false],
+                  "bearings": [105, 135, 165, 315],
+                  "location": [103.661573, 1.520711]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.657794, 1.526805],
+                  [103.657845, 1.526597],
+                  [103.657925, 1.526272],
+                  [103.657992, 1.526003],
+                  [103.65838, 1.524431],
+                  [103.658545, 1.523648],
+                  [103.658585, 1.52355],
+                  [103.658692, 1.523448],
+                  [103.658849, 1.523291],
+                  [103.659256, 1.522906],
+                  [103.659469, 1.522706],
+                  [103.659937, 1.522264],
+                  [103.660163, 1.522053],
+                  [103.660766, 1.521487],
+                  [103.660817, 1.521438],
+                  [103.660965, 1.521295],
+                  [103.661433, 1.520849],
+                  [103.661573, 1.520711],
+                  [103.661726, 1.520566]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 165,
+                "bearing_before": 248,
+                "location": [103.657794, 1.526805],
+                "modifier": "left",
+                "type": "turn"
+              },
+              "name": "Jalan Perwira 16",
+              "mode": "driving",
+              "weight": 78.8,
+              "duration": 78.8,
+              "distance": 851.4
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [false, true, false, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.661726, 1.520566]
+                },
+                {
+                  "out": 2,
+                  "in": 3,
+                  "entry": [false, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.661778, 1.520518]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true],
+                  "bearings": [45, 60, 225],
+                  "location": [103.66164, 1.520368]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.660294, 1.518917]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.658509, 1.517008]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 135, 225],
+                  "location": [103.657816, 1.516247]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.661726, 1.520566],
+                  [103.661778, 1.520518],
+                  [103.66164, 1.520368],
+                  [103.661223, 1.519912],
+                  [103.660882, 1.519562],
+                  [103.660294, 1.518917],
+                  [103.65978, 1.518351],
+                  [103.659541, 1.518098],
+                  [103.658734, 1.517245],
+                  [103.658512, 1.517011],
+                  [103.658509, 1.517008],
+                  [103.658266, 1.516748],
+                  [103.657816, 1.516247],
+                  [103.656321, 1.51461]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 132,
+                "bearing_before": 132,
+                "location": [103.661726, 1.520566],
+                "modifier": "right",
+                "type": "turn"
+              },
+              "name": "Jalan Tun Aminah",
+              "mode": "driving",
+              "weight": 70.4,
+              "duration": 70.4,
+              "distance": 899.8
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.656321, 1.51461]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 135, 315],
+                  "location": [103.656817, 1.514139]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 225, 315],
+                  "location": [103.657391, 1.513594]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, false, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.65997, 1.511143]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [false, true, true, false],
+                  "bearings": [45, 135, 225, 315],
+                  "location": [103.660032, 1.511084]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [120, 135, 315],
+                  "location": [103.66125, 1.509925]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.656321, 1.51461],
+                  [103.656817, 1.514139],
+                  [103.657391, 1.513594],
+                  [103.658201, 1.512825],
+                  [103.659097, 1.511974],
+                  [103.65997, 1.511143],
+                  [103.660032, 1.511084],
+                  [103.66125, 1.509925],
+                  [103.661649, 1.509409]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 132,
+                "bearing_before": 222,
+                "location": [103.656321, 1.51461],
+                "modifier": "left",
+                "type": "turn"
+              },
+              "name": "Jalan Sutera Pulai 2/1",
+              "mode": "driving",
+              "weight": 58.1,
+              "duration": 58.1,
+              "distance": 826.8
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, false, false],
+                  "bearings": [60, 120, 240, 315],
+                  "location": [103.661649, 1.509409]
+                },
+                {
+                  "out": 2,
+                  "in": 3,
+                  "entry": [false, true, true, false],
+                  "bearings": [60, 120, 240, 300],
+                  "location": [103.661781, 1.509312]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true, true],
+                  "bearings": [60, 120, 240, 315],
+                  "location": [103.661666, 1.509236]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true],
+                  "bearings": [60, 75, 225],
+                  "location": [103.661255, 1.508996]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [45, 225, 315],
+                  "location": [103.656763, 1.504182]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [0, 90, 180],
+                  "location": [103.656028, 1.502548]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, false],
+                  "bearings": [0, 180, 270],
+                  "location": [103.655878, 1.500876]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [0, 195, 270],
+                  "location": [103.655864, 1.500733]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [15, 90, 195],
+                  "location": [103.655804, 1.500305]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [15, 105, 195],
+                  "location": [103.655513, 1.498249]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [15, 165, 180],
+                  "location": [103.65542, 1.497591]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true, false],
+                  "bearings": [0, 90, 180, 270],
+                  "location": [103.655393, 1.497383]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true, false],
+                  "bearings": [0, 90, 180, 270],
+                  "location": [103.655384, 1.497277]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true],
+                  "bearings": [0, 30, 180],
+                  "location": [103.655363, 1.497105]
+                },
+                {
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [165, 240, 345],
+                  "location": [103.6554, 1.495379]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false],
+                  "bearings": [60, 150, 240, 345],
+                  "location": [103.655511, 1.495103]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 120, 300],
+                  "location": [103.657014, 1.493646]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [75, 120, 300],
+                  "location": [103.65943, 1.491869]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [false, true, false],
+                  "bearings": [0, 120, 300],
+                  "location": [103.659574, 1.491766]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [45, 120, 300],
+                  "location": [103.660858, 1.490846]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [135, 165, 330],
+                  "location": [103.663424, 1.488354]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.661649, 1.509409],
+                  [103.661781, 1.509312],
+                  [103.661666, 1.509236],
+                  [103.661354, 1.509065],
+                  [103.661255, 1.508996],
+                  [103.661089, 1.508831],
+                  [103.659441, 1.507058],
+                  [103.658336, 1.505868],
+                  [103.657297, 1.504749],
+                  [103.656763, 1.504182],
+                  [103.656258, 1.503645],
+                  [103.656156, 1.503519],
+                  [103.65612, 1.503433],
+                  [103.656099, 1.503366],
+                  [103.656092, 1.503278],
+                  [103.656063, 1.502929],
+                  [103.656028, 1.502548],
+                  [103.655993, 1.502161],
+                  [103.655878, 1.500876],
+                  [103.655864, 1.500733],
+                  [103.655804, 1.500305],
+                  [103.655585, 1.498755],
+                  [103.655513, 1.498249],
+                  [103.65542, 1.497591],
+                  [103.655393, 1.497383],
+                  [103.655384, 1.497277],
+                  [103.655363, 1.497105],
+                  [103.655335, 1.496612],
+                  [103.65533, 1.496295],
+                  [103.655341, 1.495999],
+                  [103.655352, 1.49567],
+                  [103.655375, 1.49551],
+                  [103.6554, 1.495379],
+                  [103.655458, 1.495212],
+                  [103.655511, 1.495103],
+                  [103.65553, 1.495063],
+                  [103.655689, 1.494828],
+                  [103.655817, 1.494673],
+                  [103.656071, 1.494414],
+                  [103.65639, 1.494125],
+                  [103.656883, 1.493743],
+                  [103.657014, 1.493646],
+                  [103.657459, 1.493313],
+                  [103.65943, 1.491869],
+                  [103.659574, 1.491766],
+                  [103.660858, 1.490846],
+                  [103.662274, 1.48984],
+                  [103.6623, 1.489819],
+                  [103.662423, 1.489723],
+                  [103.662578, 1.489586],
+                  [103.662716, 1.489458],
+                  [103.662809, 1.489355],
+                  [103.662813, 1.48935],
+                  [103.662826, 1.489335],
+                  [103.66284, 1.48932],
+                  [103.66286, 1.489297],
+                  [103.66289, 1.489262],
+                  [103.662973, 1.489164],
+                  [103.663076, 1.489026],
+                  [103.663225, 1.48879],
+                  [103.663245, 1.488752],
+                  [103.663377, 1.488493],
+                  [103.663424, 1.488354],
+                  [103.663458, 1.488251],
+                  [103.6635, 1.488113]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 125,
+                "bearing_before": 142,
+                "location": [103.661649, 1.509409],
+                "modifier": "right",
+                "type": "turn"
+              },
+              "name": "Jalan Sutera Danga",
+              "mode": "driving",
+              "weight": 193.6,
+              "duration": 193.6,
+              "distance": 3050.5
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [false, true, false, false],
+                  "bearings": [45, 165, 240, 345],
+                  "location": [103.6635, 1.488113]
+                },
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [false, true, true, false],
+                  "bearings": [45, 165, 240, 345],
+                  "location": [103.663522, 1.488045]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [75, 165, 345],
+                  "location": [103.664137, 1.485139]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [150, 165, 345],
+                  "location": [103.664337, 1.484074]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [false, true, false],
+                  "bearings": [15, 165, 345],
+                  "location": [103.66443, 1.48359]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [true, true, false],
+                  "bearings": [150, 165, 345],
+                  "location": [103.664558, 1.482954]
+                },
+                {
+                  "out": 1,
+                  "in": 2,
+                  "entry": [false, true, false],
+                  "bearings": [30, 165, 345],
+                  "location": [103.664668, 1.482449]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.6635, 1.488113],
+                  [103.663522, 1.488045],
+                  [103.663601, 1.487707],
+                  [103.66376, 1.486914],
+                  [103.664137, 1.485139],
+                  [103.664312, 1.484205],
+                  [103.664337, 1.484074],
+                  [103.66443, 1.48359],
+                  [103.664558, 1.482954],
+                  [103.664668, 1.482449],
+                  [103.664804, 1.481829]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 161,
+                "bearing_before": 161,
+                "location": [103.6635, 1.488113],
+                "modifier": "straight",
+                "type": "new name"
+              },
+              "name": "Jalan Persiaran Perling 2",
+              "mode": "driving",
+              "weight": 43.3,
+              "duration": 43.3,
+              "distance": 709.9
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, false, false],
+                  "bearings": [75, 165, 255, 345],
+                  "location": [103.664804, 1.481829]
+                },
+                {
+                  "out": 2,
+                  "in": 3,
+                  "entry": [false, true, true, false],
+                  "bearings": [75, 165, 255, 345],
+                  "location": [103.664824, 1.481724]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true, true],
+                  "bearings": [75, 165, 255, 345],
+                  "location": [103.664704, 1.481701]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true],
+                  "bearings": [71, 82, 252],
+                  "location": [103.664221, 1.481529]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, false],
+                  "bearings": [75, 165, 255, 300],
+                  "location": [103.663293, 1.481212]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, false],
+                  "bearings": [75, 255, 345],
+                  "location": [103.662243, 1.48085]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [75, 255, 345],
+                  "location": [103.662151, 1.480818]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.664804, 1.481829],
+                  [103.664824, 1.481724],
+                  [103.664704, 1.481701],
+                  [103.664221, 1.481529],
+                  [103.663367, 1.481242],
+                  [103.663293, 1.481212],
+                  [103.662493, 1.48094],
+                  [103.662243, 1.48085],
+                  [103.662151, 1.480818],
+                  [103.661193, 1.480489],
+                  [103.66114, 1.480464],
+                  [103.661103, 1.480422],
+                  [103.661084, 1.480283]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 168,
+                "bearing_before": 167,
+                "location": [103.664804, 1.481829],
+                "modifier": "right",
+                "type": "turn"
+              },
+              "name": "Persiaran Indah",
+              "mode": "driving",
+              "weight": 40.6,
+              "duration": 40.6,
+              "distance": 466.7
+            },
+            {
+              "intersections": [
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, false],
+                  "bearings": [15, 180, 345],
+                  "location": [103.661084, 1.480283]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [0, 90, 195],
+                  "location": [103.661106, 1.479948]
+                },
+                {
+                  "out": 1,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [15, 195, 225],
+                  "location": [103.66105, 1.479613]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [15, 165, 210],
+                  "location": [103.661044, 1.479588]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, false, true],
+                  "bearings": [30, 45, 210],
+                  "location": [103.660917, 1.479292]
+                },
+                {
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true],
+                  "bearings": [105, 255, 285],
+                  "location": [103.6591, 1.478577]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.661084, 1.480283],
+                  [103.661099, 1.480137],
+                  [103.661106, 1.479948],
+                  [103.661079, 1.479743],
+                  [103.66105, 1.479613],
+                  [103.661044, 1.479588],
+                  [103.660986, 1.47944],
+                  [103.660917, 1.479292],
+                  [103.660823, 1.479143],
+                  [103.66068, 1.478969],
+                  [103.660581, 1.478873],
+                  [103.66047, 1.478783],
+                  [103.660307, 1.478683],
+                  [103.660125, 1.478592],
+                  [103.659998, 1.478555],
+                  [103.659847, 1.478521],
+                  [103.659666, 1.478504],
+                  [103.659487, 1.478505],
+                  [103.659326, 1.478518],
+                  [103.659132, 1.478566],
+                  [103.6591, 1.478577],
+                  [103.659029, 1.478601]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "exit": 3,
+                "bearing_after": 175,
+                "bearing_before": 187,
+                "location": [103.661084, 1.480283],
+                "modifier": "straight",
+                "type": "rotary"
+              },
+              "rotary_name": "Jalan Persiaran Indah Utama",
+              "name": "",
+              "mode": "driving",
+              "weight": 30.2,
+              "duration": 30.2,
+              "distance": 357.1
+            },
+            {
+              "intersections": [
+                {
+                  "out": 0,
+                  "in": 1,
+                  "entry": [true, false, true],
+                  "bearings": [60, 105, 285],
+                  "location": [103.659029, 1.478601]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.659029, 1.478601],
+                  [103.659123, 1.478646],
+                  [103.659235, 1.478699],
+                  [103.659377, 1.478797],
+                  [103.659455, 1.478835],
+                  [103.65951, 1.478845]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "exit": 3,
+                "bearing_after": 64,
+                "bearing_before": 288,
+                "location": [103.659029, 1.478601],
+                "modifier": "sharp right",
+                "type": "exit rotary"
+              },
+              "name": "",
+              "mode": "driving",
+              "weight": 14.5,
+              "duration": 14.5,
+              "distance": 60.4
+            },
+            {
+              "intersections": [
+                {
+                  "in": 0,
+                  "entry": [true],
+                  "bearings": [260],
+                  "location": [103.65951, 1.478845]
+                }
+              ],
+              "driving_side": "right",
+              "geometry": {
+                "coordinates": [
+                  [103.65951, 1.478845],
+                  [103.65951, 1.478845]
+                ],
+                "type": "LineString"
+              },
+              "maneuver": {
+                "bearing_after": 0,
+                "bearing_before": 80,
+                "location": [103.65951, 1.478845],
+                "modifier": "left",
+                "type": "arrive"
+              },
+              "name": "",
+              "mode": "driving",
+              "weight": 0,
+              "duration": 0,
+              "distance": 0
+            }
+          ],
+          "weight": 902.3,
+          "summary": "Jalan Perwira 16, Jalan Sutera Danga",
+          "duration": 895.9,
+          "distance": 10563.7
+        }
+      ],
+      "weight_name": "routability",
+      "geometry": {
+        "coordinates": [
+          [103.651756, 1.540079],
+          [103.651922, 1.540255],
+          [103.652104, 1.540085],
+          [103.652292, 1.540275],
+          [103.652402, 1.54038],
+          [103.65246, 1.540443],
+          [103.65251, 1.540493],
+          [103.652582, 1.540423],
+          [103.652688, 1.540527],
+          [103.652873, 1.54073],
+          [103.653077, 1.540932],
+          [103.653194, 1.541063],
+          [103.653285, 1.541152],
+          [103.653438, 1.541313],
+          [103.653636, 1.541516],
+          [103.654019, 1.541906],
+          [103.654068, 1.541963],
+          [103.655103, 1.543036],
+          [103.655176, 1.543135],
+          [103.655301, 1.543216],
+          [103.655517, 1.54336],
+          [103.65563, 1.543436],
+          [103.655859, 1.543124],
+          [103.656289, 1.542471],
+          [103.656373, 1.542367],
+          [103.656529, 1.542224],
+          [103.656796, 1.542016],
+          [103.657071, 1.541768],
+          [103.657334, 1.541535],
+          [103.657584, 1.541299],
+          [103.658122, 1.540812],
+          [103.658251, 1.540649],
+          [103.658294, 1.540586],
+          [103.658515, 1.540272],
+          [103.658961, 1.539738],
+          [103.659449, 1.539218],
+          [103.660049, 1.538611],
+          [103.660152, 1.538507],
+          [103.660215, 1.538444],
+          [103.660331, 1.538326],
+          [103.660379, 1.538278],
+          [103.6607, 1.537953],
+          [103.662163, 1.536455],
+          [103.661936, 1.536231],
+          [103.661769, 1.536068],
+          [103.66165, 1.535952],
+          [103.661164, 1.535461],
+          [103.661898, 1.535004],
+          [103.661936, 1.534975],
+          [103.662492, 1.534499],
+          [103.663032, 1.534017],
+          [103.663066, 1.533994],
+          [103.663158, 1.533932],
+          [103.663307, 1.533862],
+          [103.663972, 1.533603],
+          [103.663804, 1.533365],
+          [103.663652, 1.53315],
+          [103.663451, 1.532902],
+          [103.662998, 1.532439],
+          [103.662364, 1.53179],
+          [103.661816, 1.531202],
+          [103.661631, 1.531007],
+          [103.661429, 1.530798],
+          [103.661224, 1.530578],
+          [103.660997, 1.530346],
+          [103.66083, 1.530166],
+          [103.660653, 1.529974],
+          [103.660383, 1.529683],
+          [103.660082, 1.529358],
+          [103.659964, 1.529231],
+          [103.659761, 1.529011],
+          [103.659566, 1.528801],
+          [103.659521, 1.528752],
+          [103.659449, 1.528625],
+          [103.659431, 1.528573],
+          [103.659452, 1.528516],
+          [103.659504, 1.528398],
+          [103.659509, 1.528383],
+          [103.659533, 1.528306],
+          [103.659632, 1.527992],
+          [103.65969, 1.52775],
+          [103.659749, 1.527505],
+          [103.659791, 1.527336],
+          [103.659813, 1.527243],
+          [103.659222, 1.527154],
+          [103.658503, 1.527021],
+          [103.658195, 1.526954],
+          [103.657979, 1.526874],
+          [103.657794, 1.526805],
+          [103.657845, 1.526597],
+          [103.657925, 1.526272],
+          [103.657992, 1.526003],
+          [103.65838, 1.524431],
+          [103.658545, 1.523648],
+          [103.658585, 1.52355],
+          [103.658692, 1.523448],
+          [103.658849, 1.523291],
+          [103.659256, 1.522906],
+          [103.659469, 1.522706],
+          [103.659937, 1.522264],
+          [103.660163, 1.522053],
+          [103.660766, 1.521487],
+          [103.660817, 1.521438],
+          [103.660965, 1.521295],
+          [103.661433, 1.520849],
+          [103.661573, 1.520711],
+          [103.661726, 1.520566],
+          [103.661778, 1.520518],
+          [103.66164, 1.520368],
+          [103.661223, 1.519912],
+          [103.660882, 1.519562],
+          [103.660294, 1.518917],
+          [103.65978, 1.518351],
+          [103.659541, 1.518098],
+          [103.658734, 1.517245],
+          [103.658512, 1.517011],
+          [103.658509, 1.517008],
+          [103.658266, 1.516748],
+          [103.657816, 1.516247],
+          [103.656321, 1.51461],
+          [103.656817, 1.514139],
+          [103.657391, 1.513594],
+          [103.658201, 1.512825],
+          [103.659097, 1.511974],
+          [103.65997, 1.511143],
+          [103.660032, 1.511084],
+          [103.66125, 1.509925],
+          [103.661649, 1.509409],
+          [103.661781, 1.509312],
+          [103.661666, 1.509236],
+          [103.661354, 1.509065],
+          [103.661255, 1.508996],
+          [103.661089, 1.508831],
+          [103.659441, 1.507058],
+          [103.658336, 1.505868],
+          [103.657297, 1.504749],
+          [103.656763, 1.504182],
+          [103.656258, 1.503645],
+          [103.656156, 1.503519],
+          [103.65612, 1.503433],
+          [103.656099, 1.503366],
+          [103.656092, 1.503278],
+          [103.656063, 1.502929],
+          [103.656028, 1.502548],
+          [103.655993, 1.502161],
+          [103.655878, 1.500876],
+          [103.655864, 1.500733],
+          [103.655804, 1.500305],
+          [103.655585, 1.498755],
+          [103.655513, 1.498249],
+          [103.65542, 1.497591],
+          [103.655393, 1.497383],
+          [103.655384, 1.497277],
+          [103.655363, 1.497105],
+          [103.655335, 1.496612],
+          [103.65533, 1.496295],
+          [103.655341, 1.495999],
+          [103.655352, 1.49567],
+          [103.655375, 1.49551],
+          [103.6554, 1.495379],
+          [103.655458, 1.495212],
+          [103.655511, 1.495103],
+          [103.65553, 1.495063],
+          [103.655689, 1.494828],
+          [103.655817, 1.494673],
+          [103.656071, 1.494414],
+          [103.65639, 1.494125],
+          [103.656883, 1.493743],
+          [103.657014, 1.493646],
+          [103.657459, 1.493313],
+          [103.65943, 1.491869],
+          [103.659574, 1.491766],
+          [103.660858, 1.490846],
+          [103.662274, 1.48984],
+          [103.6623, 1.489819],
+          [103.662423, 1.489723],
+          [103.662578, 1.489586],
+          [103.662716, 1.489458],
+          [103.662809, 1.489355],
+          [103.662813, 1.48935],
+          [103.662826, 1.489335],
+          [103.66284, 1.48932],
+          [103.66286, 1.489297],
+          [103.66289, 1.489262],
+          [103.662973, 1.489164],
+          [103.663076, 1.489026],
+          [103.663225, 1.48879],
+          [103.663245, 1.488752],
+          [103.663377, 1.488493],
+          [103.663424, 1.488354],
+          [103.663458, 1.488251],
+          [103.6635, 1.488113],
+          [103.663522, 1.488045],
+          [103.663601, 1.487707],
+          [103.66376, 1.486914],
+          [103.664137, 1.485139],
+          [103.664312, 1.484205],
+          [103.664337, 1.484074],
+          [103.66443, 1.48359],
+          [103.664558, 1.482954],
+          [103.664668, 1.482449],
+          [103.664804, 1.481829],
+          [103.664824, 1.481724],
+          [103.664704, 1.481701],
+          [103.664221, 1.481529],
+          [103.663367, 1.481242],
+          [103.663293, 1.481212],
+          [103.662493, 1.48094],
+          [103.662243, 1.48085],
+          [103.662151, 1.480818],
+          [103.661193, 1.480489],
+          [103.66114, 1.480464],
+          [103.661103, 1.480422],
+          [103.661084, 1.480283],
+          [103.661099, 1.480137],
+          [103.661106, 1.479948],
+          [103.661079, 1.479743],
+          [103.66105, 1.479613],
+          [103.661044, 1.479588],
+          [103.660986, 1.47944],
+          [103.660917, 1.479292],
+          [103.660823, 1.479143],
+          [103.66068, 1.478969],
+          [103.660581, 1.478873],
+          [103.66047, 1.478783],
+          [103.660307, 1.478683],
+          [103.660125, 1.478592],
+          [103.659998, 1.478555],
+          [103.659847, 1.478521],
+          [103.659666, 1.478504],
+          [103.659487, 1.478505],
+          [103.659326, 1.478518],
+          [103.659132, 1.478566],
+          [103.6591, 1.478577],
+          [103.659029, 1.478601],
+          [103.659123, 1.478646],
+          [103.659235, 1.478699],
+          [103.659377, 1.478797],
+          [103.659455, 1.478835],
+          [103.65951, 1.478845]
+        ],
+        "type": "LineString"
+      },
+      "weight": 902.3,
+      "duration": 895.9,
+      "distance": 10563.7
+    }
+  ],
+  "waypoints": [
+    {
+      "hint": "kRnyhJIZ8oSAAAAA9QAAAAAAAAAAAAAAlqjWQVleS0IAAAAAAAAAAEAAAAB6AAAAAAAAAAAAAAAxWgAArJktBu9_FwCamS0GAIAXAAAA_w0AAAAA",
+      "location": [103.651756, 1.540079],
+      "name": "",
+      "distance": 2.746953001
+    },
+    {
+      "hint": "P7j7hEG4-4QnAAAAAAAAANUBAACRAAAAbsuAQQAAAABaOkNDoIVxQicAAAAAAAAA1QEAAJEAAAAxWgAA9rctBr2QFgAkuC0Gg5UWABgAPxEAAAAA",
+      "location": [103.65951, 1.478845],
+      "name": "",
+      "distance": 135.2195941
+    }
+  ]
+}
