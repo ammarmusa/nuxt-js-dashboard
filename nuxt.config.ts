@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     baseURL: process.env.NUXT_APP_BASE_URL || "/",
   },
 
+  // Enable static site generation for GitHub Pages
+  ssr: false,
+  nitro: {
+    preset: "github-pages",
+  },
+
   // Runtime config for API endpoints
   runtimeConfig: {
     public: {
