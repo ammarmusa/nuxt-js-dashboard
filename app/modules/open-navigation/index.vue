@@ -206,8 +206,8 @@ const currentCoords = ref<Coordinates>({
 const waypoints = ref<Waypoint[]>([]);
 
 // Search query handlers with debounce
-let searchTimeout: NodeJS.Timeout;
-let fromSearchTimeout: NodeJS.Timeout;
+let searchTimeout: ReturnType<typeof setTimeout>;
+let fromSearchTimeout: ReturnType<typeof setTimeout>;
 
 const handleSearchQueryUpdate = (value: string) => {
   searchQuery.value = value;
@@ -421,7 +421,7 @@ const drawRoute = async (coordinates: number[][]) => {
     color: "#f97316", // Orange color
     weight: 5,
     opacity: 0.7,
-  }).addTo(mapInstance.value);
+  }).addTo(mapInstance.value as L.Map);
 
   setRouteLayer(newRouteLayer);
 };
@@ -530,7 +530,7 @@ const addUserMarker = async (lat: number, lng: number) => {
   });
 
   // Add to map directly (not to markers layer to avoid clearMarkers removing it)
-  marker.addTo(mapInstance.value);
+  marker.addTo(mapInstance.value as L.Map);
   userMarker.value = marker;
 };
 

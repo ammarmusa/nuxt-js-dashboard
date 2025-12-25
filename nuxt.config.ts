@@ -1,11 +1,17 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxt/eslint"],
 
   css: ["~/assets/css/tailwind.css"],
 
   shadcn: {
     prefix: "",
     componentDir: "./app/components/ui",
+  },
+
+  // GitHub Pages deployment configuration
+  // Set NUXT_APP_BASE_URL environment variable for the repository name
+  app: {
+    baseURL: process.env.NUXT_APP_BASE_URL || "/",
   },
 
   // Runtime config for API endpoints
