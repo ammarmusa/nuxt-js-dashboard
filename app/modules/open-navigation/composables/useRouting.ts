@@ -50,7 +50,7 @@ export const useRouting = () => {
       const response = await fetch(
         `${nominatimUrl}/search?q=${encodeURIComponent(
           query
-        )}&format=json&limit=5&addressdetails=1`,
+        )}&format=json&limit=5&addressdetails=1&countrycodes=my`,
         {
           headers: {
             Accept: "application/json",
