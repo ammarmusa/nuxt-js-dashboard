@@ -1,5 +1,7 @@
 <template>
-  <div class="absolute top-4 right-4 flex flex-col gap-2 z-[1000]">
+  <div
+    class="absolute top-2 md:top-4 right-2 md:right-4 flex flex-col gap-2 z-[1000]"
+  >
     <!-- Recenter Map Button (shown during navigation when map is not centered) -->
     <Button
       v-if="isNavigating && !isMapCentered"
@@ -32,38 +34,11 @@
     >
       <MapPinIcon :size="18" />
     </Button>
-
-    <!-- Divider -->
-    <div class="h-px bg-border my-1"></div>
-
-    <!-- Zoom Controls -->
-    <Button
-      size="icon"
-      variant="secondary"
-      @click="$emit('zoom-in')"
-      title="Zoom in"
-    >
-      <Plus :size="18" />
-    </Button>
-    <Button
-      size="icon"
-      variant="secondary"
-      @click="$emit('zoom-out')"
-      title="Zoom out"
-    >
-      <Minus :size="18" />
-    </Button>
   </div>
 </template>
 
 <script setup lang="ts">
-import {
-  Locate,
-  MapPin as MapPinIcon,
-  Plus,
-  Minus,
-  Search,
-} from "lucide-vue-next";
+import { Locate, MapPin as MapPinIcon, Search } from "lucide-vue-next";
 
 defineProps<{
   isNavigating: boolean;
@@ -74,7 +49,5 @@ defineEmits<{
   (e: "recenter"): void;
   (e: "toggle-search"): void;
   (e: "center-on-user"): void;
-  (e: "zoom-in"): void;
-  (e: "zoom-out"): void;
 }>();
 </script>

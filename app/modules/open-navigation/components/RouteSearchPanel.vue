@@ -1,9 +1,9 @@
 <template>
   <div
     v-if="show && !isNavigating"
-    class="absolute top-4 left-4 z-[1000] backdrop-blur-md bg-white/70 dark:bg-black/70 border border-white/20 dark:border-white/10 rounded-lg shadow-lg w-96 max-h-[calc(100vh-8rem)] overflow-auto"
+    class="absolute z-[1000] backdrop-blur-md bg-white/70 dark:bg-black/70 border border-white/20 dark:border-white/10 rounded-lg shadow-lg overflow-auto bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-sm max-h-[60vh] md:top-4 md:left-4 md:bottom-auto md:translate-x-0 md:w-96 md:max-h-[calc(100vh-8rem)]"
   >
-    <div class="p-4 space-y-4">
+    <div class="p-3 md:p-4 space-y-3 md:space-y-4">
       <!-- Panel Header -->
       <div class="flex items-center justify-between">
         <h3 class="font-semibold text-lg">Find Route</h3>

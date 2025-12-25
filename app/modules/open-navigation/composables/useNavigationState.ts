@@ -119,14 +119,9 @@ export const useNavigationState = () => {
       iconAnchor: [16, 16],
     });
 
-    // Add new navigation marker
+    // Add new navigation marker without popup during navigation
     navigationMarker.value = await addMarker([lat, lng], {
       icon: navigationIcon,
-      popup: `<b>Your Position</b><br>Lat: ${lat.toFixed(
-        5
-      )}<br>Lng: ${lng.toFixed(5)}${
-        heading !== null ? `<br>Heading: ${Math.round(rotation)}°` : ""
-      }`,
     });
 
     // Store current navigation location

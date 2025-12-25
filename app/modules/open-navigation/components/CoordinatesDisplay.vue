@@ -1,8 +1,8 @@
 <template>
   <div
-    class="absolute bottom-4 left-4 z-[1000] bg-background/90 backdrop-blur-sm px-3 py-2 rounded-md text-xs border shadow-sm"
+    class="absolute bottom-4 left-2 md:left-4 z-[1000] bg-background/90 backdrop-blur-sm px-2 md:px-3 py-1.5 md:py-2 rounded-md text-[10px] md:text-xs border shadow-sm"
   >
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-1.5 md:gap-3">
       <div class="flex items-center gap-1">
         <span class="text-muted-foreground">Lat:</span>
         <span class="font-mono">{{ coords.lat.toFixed(5) }}</span>

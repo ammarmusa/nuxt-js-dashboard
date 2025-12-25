@@ -1,8 +1,5 @@
 <template>
   <div class="flex flex-col h-screen bg-background">
-    <!-- Header -->
-    <NavigationHeader @back="goBack" />
-
     <!-- Map Container - Full Width and Height -->
     <div class="flex-1 relative">
       <ClientOnly>
@@ -12,6 +9,20 @@
             class="w-full h-full"
             style="background: #e0e0e0"
           ></div>
+
+          <!-- Home Button Overlay -->
+          <div class="absolute top-2 left-2 md:top-4 md:left-4 z-[1000]">
+            <Button
+              variant="secondary"
+              size="icon"
+              class="shadow-lg bg-white hover:bg-gray-100 h-9 w-9 md:h-10 md:w-10"
+              title="Go to Home"
+              @click="goHome"
+            >
+              <Home :size="18" class="md:hidden" />
+              <Home :size="20" class="hidden md:block" />
+            </Button>
+          </div>
 
           <!-- Map Controls Overlay -->
           <MapControls
@@ -69,15 +80,16 @@
           <!-- Stop Navigation Button -->
           <div
             v-if="isNavigating"
-            class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[1000]"
+            class="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-[1000]"
           >
             <Button
               @click="handleStopNavigation"
-              class="bg-red-600 hover:bg-red-700 shadow-lg px-6"
+              class="bg-red-600 hover:bg-red-700 shadow-lg px-4 md:px-6 text-sm md:text-base"
               variant="destructive"
             >
-              <X :size="16" class="mr-2" />
-              Stop Navigation
+              <X :size="16" class="mr-1 md:mr-2" />
+              <span class="hidden sm:inline">Stop Navigation</span>
+              <span class="sm:hidden">Stop</span>
             </Button>
           </div>
         </div>
@@ -100,7 +112,7 @@
 </template>
 
 <script setup lang="ts">
-import { X } from "lucide-vue-next";
+import { X, Home } from "lucide-vue-next";
 import { useLeafletMap } from "~/modules/3d-map/composables/useLeafletMap";
 import { useRouting, type Place } from "./composables/useRouting";
 import { useNavigationState } from "./composables/useNavigationState";
@@ -109,7 +121,6 @@ import { useRouteSearch } from "./composables/useRouteSearch";
 import type { Coordinates, Waypoint } from "./types/navigation.types";
 
 // Components
-import NavigationHeader from "./components/NavigationHeader.vue";
 import MapControls from "./components/MapControls.vue";
 import CoordinatesDisplay from "./components/CoordinatesDisplay.vue";
 import RouteSearchPanel from "./components/RouteSearchPanel.vue";
@@ -444,8 +455,8 @@ const handleMapClick = async (e: any) => {
   console.log("Map clicked at:", e.latlng);
 };
 
-const goBack = () => {
-  router.back();
+const goHome = () => {
+  router.push("/");
 };
 
 // User location marker reference
