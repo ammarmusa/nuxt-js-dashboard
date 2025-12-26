@@ -75,6 +75,7 @@
           <NavigationInstructions
             v-if="isNavigating"
             :instruction="currentInstruction"
+            :next-instruction="nextInstruction"
           />
 
           <!-- Stop Navigation Button -->
@@ -164,6 +165,7 @@ const {
   isNavigating,
   isMapCentered,
   currentInstruction,
+  nextInstruction,
   isProgrammaticMove,
   userNavigationLocation,
   routeSteps,
@@ -320,6 +322,13 @@ const handleZoomOut = () => {
 };
 
 const handleStartNavigation = () => {
+  // Remove the user location marker before starting navigation
+  // Navigation will create its own marker
+  if (userMarker.value && mapInstance.value) {
+    mapInstance.value.removeLayer(userMarker.value);
+    userMarker.value = null;
+  }
+
   startNavigation(
     routeInfo.value,
     selectedDestination.value,
@@ -336,6 +345,11 @@ const handleStopNavigation = () => {
   stopNavigation(mapInstance.value, removeMarker, clearMarkers, toast);
   resetSearchState();
   setRouteLayer(null);
+
+  // Restore the user location marker after navigation stops
+  if (userLocation.value) {
+    addUserMarker(userLocation.value.lat, userLocation.value.lng);
+  }
 };
 
 // Calculate route

@@ -20,6 +20,7 @@ export const useNavigationState = () => {
   const routeSteps = ref<any[]>([]);
   const currentStepIndex = ref(0);
   const currentInstruction = ref<NavigationInstruction | null>(null);
+  const nextInstruction = ref<NavigationInstruction | null>(null);
   const isMapCentered = ref(true);
   const userNavigationLocation = ref<UserLocation | null>(null);
   const isProgrammaticMove = ref(false);
@@ -84,6 +85,35 @@ export const useNavigationState = () => {
         "continue",
       name: currentStep.name || "",
     };
+
+    // Get next step for preview
+    const nextStepIndex = currentStepIndex.value + 1;
+    if (nextStepIndex < routeSteps.value.length) {
+      const nextStep = routeSteps.value[nextStepIndex];
+      if (nextStep?.maneuver) {
+        const nextInstructionText = generateInstruction(nextStep.maneuver);
+        const [nextManeuverLng, nextManeuverLat] = nextStep.maneuver.location;
+        const distanceToNext = calculateDistance(
+          maneuverLat,
+          maneuverLng,
+          nextManeuverLat,
+          nextManeuverLng
+        );
+        const nextDistanceText = formatDistanceText(distanceToNext);
+
+        nextInstruction.value = {
+          instruction: nextInstructionText,
+          distance: nextDistanceText,
+          type:
+            nextStep.maneuver.modifier || nextStep.maneuver.type || "continue",
+          name: nextStep.name || "",
+        };
+      } else {
+        nextInstruction.value = null;
+      }
+    } else {
+      nextInstruction.value = null;
+    }
   };
 
   /**
@@ -355,6 +385,7 @@ export const useNavigationState = () => {
     isMapCentered,
     currentStepIndex,
     currentInstruction,
+    nextInstruction,
     userNavigationLocation,
     isProgrammaticMove,
     routeSteps,

@@ -3,6 +3,7 @@
     v-if="instruction"
     class="absolute top-2 md:top-4 left-1/2 transform -translate-x-1/2 z-[1000] w-full max-w-[calc(100%-5rem)] md:max-w-md px-2 md:px-4"
   >
+    <!-- Current Instruction -->
     <div
       class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-3 md:p-4 border-2 border-green-500"
     >
@@ -41,6 +42,39 @@
         </div>
       </div>
     </div>
+
+    <!-- Next Instruction -->
+    <div
+      v-if="nextInstruction"
+      class="mt-2 bg-white/90 dark:bg-gray-800/90 rounded-lg shadow-md p-2 md:p-3 border border-gray-300 dark:border-gray-600"
+    >
+      <div class="flex items-center gap-2">
+        <div
+          class="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 bg-gray-500 rounded-full flex items-center justify-center"
+        >
+          <component
+            :is="nextDirectionIcon"
+            :size="14"
+            class="text-white md:hidden"
+          />
+          <component
+            :is="nextDirectionIcon"
+            :size="16"
+            class="text-white hidden md:block"
+          />
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="text-[10px] md:text-xs text-muted-foreground mb-0.5">
+            Then in {{ nextInstruction.distance }}
+          </div>
+          <div
+            class="text-xs md:text-sm font-semibold text-foreground leading-tight truncate"
+          >
+            {{ nextInstruction.instruction }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -56,17 +90,25 @@ import type { NavigationInstruction } from "../types/navigation.types";
 
 const props = defineProps<{
   instruction: NavigationInstruction | null;
+  nextInstruction?: NavigationInstruction | null;
 }>();
 
-const directionIcon = computed(() => {
-  if (!props.instruction) return Navigation;
+const getDirectionIcon = (
+  instruction: NavigationInstruction | null | undefined
+) => {
+  if (!instruction) return Navigation;
 
-  const lowerType = props.instruction.type.toLowerCase();
+  const lowerType = instruction.type.toLowerCase();
   if (lowerType.includes("left")) return ArrowLeftIcon;
   if (lowerType.includes("right")) return ArrowRight;
   if (lowerType.includes("straight") || lowerType.includes("continue"))
     return ArrowUp;
   if (lowerType.includes("slight")) return ArrowUpRight;
   return Navigation;
-});
+};
+
+const directionIcon = computed(() => getDirectionIcon(props.instruction));
+const nextDirectionIcon = computed(() =>
+  getDirectionIcon(props.nextInstruction)
+);
 </script>

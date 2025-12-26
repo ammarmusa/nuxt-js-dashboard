@@ -14,7 +14,7 @@ export const useLocationTracking = () => {
     lat: number,
     lng: number,
     shouldCenter: boolean,
-    isNavigating: boolean,
+    isNavigating: Ref<boolean>,
     mapInstance: any,
     addMarker: Function,
     removeMarker: Function,
@@ -25,7 +25,7 @@ export const useLocationTracking = () => {
 
     // Skip updating the location marker if navigation is active
     // Navigation mode uses its own marker (navigationMarker)
-    if (isNavigating) {
+    if (isNavigating.value) {
       // Just update the user location reference without marker or centering
       userLocation.value = { lat, lng };
       if (selectedFromLocation.value?.isUserLocation) {
@@ -97,7 +97,7 @@ export const useLocationTracking = () => {
    * Start location tracking
    */
   const startLocationTracking = (
-    isNavigating: boolean,
+    isNavigating: Ref<boolean>,
     mapInstance: any,
     addMarker: Function,
     removeMarker: Function,
@@ -188,7 +188,7 @@ export const useLocationTracking = () => {
    * Toggle location tracking
    */
   const toggleLocationTracking = (
-    isNavigating: boolean,
+    isNavigating: Ref<boolean>,
     mapInstance: any,
     addMarker: Function,
     removeMarker: Function,
