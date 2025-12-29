@@ -530,8 +530,10 @@ const addUserMarker = async (lat: number, lng: number) => {
   const L = await import("leaflet");
 
   // Remove existing user marker if any
+  // Use removeLayer directly since marker is added directly to map (not markersLayer)
   if (userMarker.value) {
-    removeMarker(userMarker.value);
+    mapInstance.value.removeLayer(userMarker.value);
+    userMarker.value = null;
   }
 
   // Create custom icon for user location
