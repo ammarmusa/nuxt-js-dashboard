@@ -182,6 +182,7 @@ const {
 const {
   isTrackingLocation,
   userLocation,
+  userLocationMarker,
   toggleLocationTracking,
   cleanup: cleanupLocationTracking,
 } = useLocationTracking();
@@ -327,6 +328,12 @@ const handleStartNavigation = () => {
   if (userMarker.value && mapInstance.value) {
     mapInstance.value.removeLayer(userMarker.value);
     userMarker.value = null;
+  }
+
+  // Also remove the location tracking marker if it exists
+  if (userLocationMarker.value && mapInstance.value) {
+    mapInstance.value.removeLayer(userLocationMarker.value);
+    userLocationMarker.value = null;
   }
 
   startNavigation(
